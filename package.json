@@ -1,0 +1,32 @@
+{
+  "name": "mysql-nodejs-rest-api",
+  "version": "1.0.1",
+  "description": "A simple REST API with Node.js, Express and MySQL",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "pretest": "cross-env NODE_ENV=test jest --clearCache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.19.2",
+    "generate-password": "^1.7.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.3",
+    "nodemailer": "^6.9.7",
+    "stripe": "^14.22.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  }
+}
